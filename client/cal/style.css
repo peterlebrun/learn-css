@@ -1,0 +1,32 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.week {
+    display: flex;
+    flex-direction: row;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 125px;
+    margin: 1px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50px;
+    margin: 1px;
+}
+
+.hour {
+    height: 20px;
+    border: 1px solid red;
+    padding: 0px;
+}
