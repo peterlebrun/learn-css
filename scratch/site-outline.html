@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <style>
+     * {
+         -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+                 box-sizing: border-box;
+     }
+
+     body {
+       margin: 0;
+       display: flex;
+       justify-content: center;
+     }
+
+     .container {
+       margin: 0;
+       display: flex;
+       flex-direction: column;
+       width: 1000px;
+       height: 100%;
+       //background: #6099ff;
+     }
+
+     .hero {
+       margin: 0 100px;
+       height: 150px;
+       background: #f33;
+     }
+
+     .nav {
+       margin: 0 100px;
+       border: 1px solid #fff;
+       display: flex;
+       justify-content: space-between;
+     }
+
+     .nav-item {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       background: #f33;
+       border: 1px solid #fff;
+       color: #fff;
+       height: 50px;
+       width: 33.3%
+     }
+
+     .content {
+       border: 1px solid #000;
+       display: flex;
+       flex-direction: column;
+     }
+
+     .content-row {
+       display: flex;
+     }
+
+     .content-item {
+       width: 250px;
+       height: 250px;
+       border: 1px solid #000;
+     }
+
+     .footer {
+       height: 100%;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero"></div>
+      <div class="nav">
+        <div class="nav-item">Home</div>
+        <div class="nav-item">Blog</div>
+        <div class="nav-item">Portfolio</div>
+      </div>
+      <div class="content">
+        <div class="content-row">
+          <div class="content-item"></div>
+          <div class="content-item"></div>
+          <div class="content-item"></div>
+          <div class="content-item"></div>
+        </div>
+        <div class="content-row">
+          <div class="content-item"></div>
+          <div class="content-item"></div>
+          <div class="content-item"></div>
+          <div class="content-item"></div>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
