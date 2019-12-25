@@ -1,7 +1,7 @@
 <html>
   <head>
     <script defer src="/Users/p/Desktop/fontawesome-free-5.12.0-web/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:Semi-Bold&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <style>
      * {
        -webkit-box-sizing: border-box;
@@ -16,27 +16,42 @@
        justify-content: center;
      }
 
+     .icon-size {
+       font-size: 10px;
+     }
+
      .space {
        display: block;
-       margin: 8px;
+       margin: 3px;
      }
 
      .container {
        margin: 0;
        display: flex;
        flex-direction: column;
-       width: 1000px;
+       justify-content: center;
+       width: 100%;
        height: 100%;
      }
 
      .hero {
-       margin: 0 102px;
-       height: 150px;
-       background: #5f98fa;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: flex-end;
+       margin: 0;
+       height: 100px;
+       background: #00288f;
        color: #fff;
-       font-size: 110px;
+       font-size: 12px;
        text-align: left;
-       padding: 0;
+       padding: 8px;
+     }
+
+     .hero-nav {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
      }
 
      .nav {
@@ -44,6 +59,13 @@
        border: 1px solid #fff;
        display: flex;
        justify-content: space-between;
+       font-size: 12px;
+     }
+
+     .hero-nav-item {
+       display: flex;
+       margin: 0 10px;
+       align-items: center;
      }
 
      .nav-item {
@@ -65,10 +87,11 @@
 
      .content-row {
        display: flex;
+       justify-content: center;
      }
 
      .content-item {
-       background: #ccc;
+       background: #ddd;
        width: 250px;
        height: 250px;
        margin: 3px;
@@ -87,20 +110,19 @@
   <body>
     <div class="container">
       <div class="hero">
-        Pedro
-      </div>
-      <div class="nav">
-        <div class="nav-item">
-          <i class="fas fa-home space"></i>
-          Home
-        </div>
-        <div class="nav-item">
-          <i class="fas fa-file-alt space"></i>
-          Blog
-        </div>
-        <div class="nav-item">
-          <i class="fas fa-folder space"></i>
-          Portfolio
+        <div class="hero-nav">
+          <div class="hero-nav-item">
+          <i class="fas fa-home space icon-size"></i>
+          HOME
+          </div>
+          <div class="hero-nav-item">
+          <i class="fas fa-file-alt space icon-size"></i>
+          BLOG
+          </div>
+          <div class="hero-nav-item">
+          <i class="fas fa-folder space icon-size"></i>
+          PORTFOLIO
+          </div>
         </div>
       </div>
       <div class="content">
@@ -117,7 +139,6 @@
           <div class="content-item">Oito</div>
         </div>
       </div>
-      <div class="footer"></div>
     </div>
   </body>
 </html>
